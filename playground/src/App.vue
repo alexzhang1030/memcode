@@ -1,22 +1,18 @@
 <script setup lang="ts">
-import { MemCode } from 'memcode'
-
-const code = new MemCode()
-
-code.add('package.json', JSON.stringify({
-  name: 'hello world'
-}))
-
-code.add('/src/index.ts', 'console.log("hello world")')
-code.add('/src/foo/bar.ts', 'console.log("hello foo bar"')
-
+import { VueShikiInput } from 'vue-shiki-input'
+import FileExplorer from './components/FileExplorer.vue'
+import { code, lang, langs } from './composables/useMemCode'
 </script>
 
 <template>
-  <button @click="async() => {
-    const blob = await code.toZipBlob()
-    code.downloadZip(blob, 'memcode.zip')
-  }">
-    download
-  </button>
+  <div class="w-80% h-85% bg-[#121212] rounded-lg grid grid-cols-[220px_1fr] p3 box-border gap-4">
+    <FileExplorer />
+    <VueShikiInput
+      v-model="code" :langs="langs" :themes="['vitesse-dark']" :code-to-hast-options="{
+        lang,
+        theme: 'vitesse-dark',
+      }"
+      disabled
+    />
+  </div>
 </template>

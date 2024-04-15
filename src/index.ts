@@ -1,4 +1,4 @@
-import { PathTreeBuilder, walkPathTree } from 'to-path-tree'
+import { PathTreeBuilder, ROOT_NAME, walkPathTree } from 'to-path-tree'
 import JSZip from 'jszip'
 import FileSaver from 'file-saver'
 
@@ -6,6 +6,12 @@ export class MemCode {
   #pathTreeBuilder = new PathTreeBuilder<{
     code: string
   }>()
+
+  constructor(files?: { path: string, code: string }[]) {
+    files?.forEach(({ path, code }) => {
+      this.add(path, code)
+    })
+  }
 
   add(path: string, code: string) {
     this.#pathTreeBuilder.addPath(path, {
@@ -15,6 +21,13 @@ export class MemCode {
 
   remove(path: string) {
     this.#pathTreeBuilder.removePath(path)
+  }
+
+  /**
+   * @param path `/` means root
+   */
+  listFiles(path: string) {
+    return this.#pathTreeBuilder.getItems(path === '/' ? ROOT_NAME : path)
   }
 
   async toZipBlob() {

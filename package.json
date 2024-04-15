@@ -26,6 +26,7 @@
   ],
   "scripts": {
     "test": "vitest",
+    "dev": "tsup --watch",
     "lint": "eslint .",
     "prepare": "simple-git-hooks",
     "build": "tsup",
@@ -36,7 +37,7 @@
   "dependencies": {
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
-    "to-path-tree": "^1.1.5"
+    "to-path-tree": "^1.1.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.13.3",
