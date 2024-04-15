@@ -1,0 +1,61 @@
+{
+  "name": "memcode",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.7",
+  "description": "Organize your filles and download them in your browser.",
+  "author": "alexzhang1030",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexzhang1030/memcode.git"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint .",
+    "prepare": "simple-git-hooks",
+    "build": "tsup",
+    "prepublishOnly": "pnpm run build",
+    "release": "vitest run && bumpp --commit \"chore: release v%s\" --push --tag && pnpm publish",
+    "play": "pnpm -F playground dev"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "to-path-tree": "^1.1.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.13.3",
+    "@types/file-saver": "^2.0.7",
+    "bumpp": "^9.4.0",
+    "eslint": "npm:eslint-ts-patch@8.56.0-0",
+    "eslint-ts-patch": "8.56.0-0",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --fix"
+    ]
+  }
+}
