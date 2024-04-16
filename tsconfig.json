@@ -15,6 +15,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
+    "outDir": "dist",
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
