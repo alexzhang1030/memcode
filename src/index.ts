@@ -23,6 +23,20 @@ export class MemCode {
     this.#pathTreeBuilder.removePath(path)
   }
 
+  update(path: string, code: string) {
+    const node = this.#pathTreeBuilder.getNode(path, true)
+    if (!node)
+      return
+    node.data ??= {
+      code,
+    }
+  }
+
+  get(path: string) {
+    const node = this.#pathTreeBuilder.getNode(path, true)
+    return node?.data?.code ?? null
+  }
+
   /**
    * @param path `/` means root
    */
