@@ -17,14 +17,26 @@ pnpm i memcode
 ```ts
 import { MemCode } from 'memcode'
 
-const code = new MemCode()
+// add files when creating
+const code = new MemCode([{
+  name: 'src/index.ts',
+  content: 'console.log("hello world")'
+}])
 
+// add
 code.add('package.json', JSON.stringify({
   name: 'hello world'
 }))
 
+// add also support directory
 code.add('/src/index.ts', 'console.log("hello world")')
 code.add('/src/foo/bar.ts', 'console.log("hello foo bar"')
+
+// update
+code.update('src/index.ts', 'const a = 1')
+
+// remove
+code.remove('src/index.ts')
 
 // To zip
 const blob = await code.toZipBlob()
