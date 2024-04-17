@@ -13,7 +13,7 @@
     "memcode": "workspace:*",
     "shiki": "^1.3.0",
     "vue": "^3.4.21",
-    "vue-shiki-input": "^1.0.1"
+    "vue-shiki-input": "^1.2.0"
   },
   "devDependencies": {
     "@iconify-json/solar": "^1.1.9",
