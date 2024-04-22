@@ -12,15 +12,15 @@
     "@vueuse/core": "^10.9.0",
     "memcode": "workspace:*",
     "shiki": "^1.3.0",
-    "vue": "^3.4.21",
+    "vue": "^3.4.23",
     "vue-shiki-input": "^1.2.0"
   },
   "devDependencies": {
     "@iconify-json/solar": "^1.1.9",
     "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
-    "unocss": "^0.59.2",
-    "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "typescript": "^5.4.5",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.10",
+    "vue-tsc": "^2.0.14"
   }
 }
