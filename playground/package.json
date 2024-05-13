@@ -11,16 +11,16 @@
   "dependencies": {
     "@vueuse/core": "^10.9.0",
     "memcode": "workspace:*",
-    "shiki": "^1.4.0",
-    "vue": "^3.4.26",
+    "shiki": "^1.5.1",
+    "vue": "^3.4.27",
     "vue-shiki-input": "^1.2.0"
   },
   "devDependencies": {
     "@iconify-json/solar": "^1.1.9",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.4.5",
-    "unocss": "^0.59.4",
+    "unocss": "^0.60.2",
     "vite": "^5.2.11",
-    "vue-tsc": "^2.0.16"
+    "vue-tsc": "^2.0.17"
   }
 }
