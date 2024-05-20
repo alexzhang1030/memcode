@@ -11,7 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^10.9.0",
     "memcode": "workspace:*",
-    "shiki": "^1.5.1",
+    "shiki": "^1.6.0",
     "vue": "^3.4.27",
     "vue-shiki-input": "^1.2.0"
   },
@@ -21,6 +21,6 @@
     "typescript": "^5.4.5",
     "unocss": "^0.60.2",
     "vite": "^5.2.11",
-    "vue-tsc": "^2.0.17"
+    "vue-tsc": "^2.0.19"
   }
 }
