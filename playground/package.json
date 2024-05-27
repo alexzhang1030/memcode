@@ -19,7 +19,7 @@
     "@iconify-json/solar": "^1.1.9",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.4.5",
-    "unocss": "^0.60.2",
+    "unocss": "^0.60.3",
     "vite": "^5.2.11",
     "vue-tsc": "^2.0.19"
   }
