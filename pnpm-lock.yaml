@@ -64,8 +64,8 @@ importers:
         specifier: ^3.4.30
         version: 3.4.30(typescript@5.5.2)
       vue-shiki-input:
-        specifier: ^1.2.0
-        version: 1.2.0(@vueuse/core@10.11.0(vue@3.4.30(typescript@5.5.2)))(shiki@1.9.0)(vue@3.4.30(typescript@5.5.2))
+        specifier: ^2.0.1
+        version: 2.0.1(@vueuse/core@10.11.0(vue@3.4.30(typescript@5.5.2)))(shiki@1.9.0)(vue@3.4.30(typescript@5.5.2))
     devDependencies:
       '@iconify-json/solar':
         specifier: ^1.1.9
@@ -2640,11 +2640,11 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-shiki-input@1.2.0:
-    resolution: {integrity: sha512-wJjvYjDUzjdvQuzliaqxeusS5LUj6JBg1OdXrRTjCUA2fcAqkFn/l7OBSRuT0yLdsnNnfE4HGNJ2bFENZgg6/w==}
+  vue-shiki-input@2.0.1:
+    resolution: {integrity: sha512-G+ZnRtD7GGxu+x0BS9NtJqVXvDvhHOdlXAL5wNtW3cWiQ2seoQ2rdeeM806IVIo4rTEeh6SLT8IhQHGkC6cA/A==}
     peerDependencies:
       '@vueuse/core': '>=9.0.0'
-      shiki: '>=1.1.0'
+      shiki: '>=1.9.0'
       vue: '>=3.2.0'
 
   vue-template-compiler@2.7.16:
@@ -5495,7 +5495,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-shiki-input@1.2.0(@vueuse/core@10.11.0(vue@3.4.30(typescript@5.5.2)))(shiki@1.9.0)(vue@3.4.30(typescript@5.5.2)):
+  vue-shiki-input@2.0.1(@vueuse/core@10.11.0(vue@3.4.30(typescript@5.5.2)))(shiki@1.9.0)(vue@3.4.30(typescript@5.5.2)):
     dependencies:
       '@vueuse/core': 10.11.0(vue@3.4.30(typescript@5.5.2))
       shiki: 1.9.0
