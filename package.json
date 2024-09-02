@@ -2,7 +2,7 @@
   "name": "memcode",
   "type": "module",
   "version": "1.2.1",
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0",
   "description": "Organize your filles and download them in your browser.",
   "author": "alexzhang1030",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "scripts": {
     "test": "vitest",
     "dev": "tsup --watch",
-    "lint": "eslint .",
+    "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
     "prepare": "simple-git-hooks",
     "build": "tsup",
     "prepublishOnly": "pnpm run build",
@@ -48,6 +48,7 @@
     "lint-staged": "^15.2.9",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
@@ -56,7 +57,7 @@
   },
   "lint-staged": {
     "*": [
-      "eslint --fix"
+      "pnpm lint --fix"
     ]
   }
 }
