@@ -1,5 +1,5 @@
-import { ref, shallowRef, watchEffect } from 'vue'
 import { MemCode } from 'memcode'
+import { ref, shallowRef, watchEffect } from 'vue'
 
 const codes = [
   {
