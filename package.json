@@ -2,7 +2,7 @@
   "name": "memcode",
   "type": "module",
   "version": "1.2.1",
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "description": "Organize your filles and download them in your browser.",
   "author": "alexzhang1030",
   "license": "MIT",
@@ -40,11 +40,11 @@
     "to-path-tree": "^1.2.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.0",
+    "@antfu/eslint-config": "^3.12.1",
     "@types/file-saver": "^2.0.7",
     "bumpp": "^9.9.2",
     "eslint": "^9.17.0",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
