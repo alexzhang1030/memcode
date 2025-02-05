@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vueuse/core": "^12.4.0",
+    "@vueuse/core": "^12.5.0",
     "memcode": "workspace:*",
-    "shiki": "^1.27.2",
+    "shiki": "^1.29.2",
     "vue": "^3.5.13",
     "vue-shiki-input": "^2.0.1"
   },
@@ -19,8 +19,8 @@
     "@iconify-json/solar": "^1.2.2",
     "@vitejs/plugin-vue": "^5.2.1",
     "typescript": "^5.7.3",
-    "unocss": "^65.4.2",
-    "vite": "^6.0.7",
+    "unocss": "^65.4.3",
+    "vite": "^6.0.11",
     "vue-tsc": "^2.2.0"
   }
 }
