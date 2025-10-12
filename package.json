@@ -40,7 +40,7 @@
     "to-path-tree": "^1.2.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.19.0",
+    "@antfu/eslint-config": "^5.4.1",
     "@types/file-saver": "^2.0.7",
     "bumpp": "^10.3.1",
     "eslint": "^9.37.0",
