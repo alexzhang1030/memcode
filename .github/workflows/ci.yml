@@ -13,7 +13,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     env:
-      PNPM_CONFIG_DANGEROUSLY_ALLOW_ALL_BUILDS: "true"
+      PNPM_CONFIG_DANGEROUSLY_ALLOW_ALL_BUILDS: 'true'
     steps:
       - uses: actions/checkout@v7
       - name: Enable pnpm

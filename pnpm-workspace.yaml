@@ -4,4 +4,4 @@ onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks
   - unrs-resolver
-  - "@swc/core"
+  - '@swc/core'
