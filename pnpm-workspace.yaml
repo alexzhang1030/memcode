@@ -1,3 +1,8 @@
+minimumReleaseAge: 0
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
 packages:
   - .
 onlyBuiltDependencies:
@@ -5,6 +10,5 @@ onlyBuiltDependencies:
   - simple-git-hooks
   - unrs-resolver
   - '@swc/core'
-trustPolicy: off
-minimumReleaseAge: 0
+
 dangerouslyAllowAllBuilds: true
