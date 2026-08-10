@@ -3,3 +3,9 @@ trustPolicy: no-downgrade
 packages:
   - playground
 trustPolicyIgnoreAfter: 1440
+
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
+  - unrs-resolver
+  - "@swc/core"

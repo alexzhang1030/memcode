@@ -12,6 +12,8 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      npm_config_dangerously_allow_all_builds: "true"
     steps:
       - uses: actions/checkout@v7
 
