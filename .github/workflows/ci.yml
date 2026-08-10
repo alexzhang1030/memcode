@@ -13,7 +13,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     env:
-      npm_config_dangerously_allow_all_builds: "true"
+      PNPM_CONFIG_DANGEROUSLY_ALLOW_ALL_BUILDS: "true"
     steps:
       - uses: actions/checkout@v7
       - name: Enable pnpm
@@ -26,7 +26,7 @@ jobs:
       - name: Setup ni
         run: npm i -g @antfu/ni
       - name: Install
-        run: nci
+        run: pnpm install --config.dangerously-allow-all-builds=true
       - name: Test
         run: nr test
       - name: Build
