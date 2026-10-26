@@ -41,7 +41,9 @@ export class MemCode {
    * @param path `/` means root
    */
   listFiles(path: string) {
-    return this.#pathTreeBuilder.getItems(path === '/' ? ROOT_NAME : path)
+    return this.#pathTreeBuilder.getItems(path === '/'
+      ? ROOT_NAME
+      : path)
   }
 
   async toZipBlob() {

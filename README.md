@@ -18,10 +18,12 @@ pnpm i memcode
 import { MemCode } from 'memcode'
 
 // add files when creating
-const code = new MemCode([{
-  name: 'src/index.ts',
-  content: 'console.log("hello world")'
-}])
+const code = new MemCode([
+  {
+    name: 'src/index.ts',
+    content: 'console.log("hello world")'
+  }
+])
 
 // add
 code.add('package.json', JSON.stringify({
