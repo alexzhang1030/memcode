@@ -1,16 +1,20 @@
-dangerouslyAllowAllBuilds: true
 minimumReleaseAge: 0
-shellEmulator: true
+minimumReleaseAgeExcludePrune: true
+trustLockfile: true
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - chokidar
   - semver
+
+dangerouslyAllowAllBuilds: true
+shellEmulator: true
+
 packages:
   - .
+
 onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks
   - unrs-resolver
   - '@swc/core'
-trustLockfile: true
